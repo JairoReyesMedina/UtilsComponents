@@ -6,7 +6,7 @@ class CodeInput extends HTMLElement{
     }
 
    connectedCallback(){
-        
+         
    this.setAttribute("contentEditable", "true");
    let es = this;
    this.oninput = ()=>{ 
