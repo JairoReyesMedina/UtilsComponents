@@ -3,7 +3,7 @@
 class CodeInput extends HTMLElement{
     constructor(){
         super();
-    }
+    } 
 
    connectedCallback(){
          
