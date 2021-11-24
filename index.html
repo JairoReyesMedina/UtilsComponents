@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="https://jairoreyesmedina.github.io/UtilsComponents/preloads.js"></script>
-</head>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       <link rel="stylesheet"  type="text/css" href="public/iconos_fuentes01/style.css" />
+       <link rel="stylesheet" type="text/css"  href="public/fuentes/css/all.css" />
+       <link rel="stylesheet" type="text/css"  href="public/icofont/icofont.css" />
+        <title>Document</title>
+       </head>
 <body>
-    
+   <div id="container">
+    <div id="nav">
+    <h1 id="title">&nbsp;<img src="public/logo.png" height="50px" style="transform: scale(0.7);"/><span style="color:#000;">Material</span>&nbsp;-&nbsp;<span style="color:#00f;">Design</span></h1>
+    <span class="fa fa-search"  id="search" title="buscar..."></span>
+    <span class="fa fa-home"  id="inicio" title="Inicio"></span>
+    <span class="fa fa-bell"  id="notificaciones" title="Mis Notificaciones" ></span>
+    <span class="fa fa-users"  id="solisitudes" title="Mis Solicitudes"></span>
+    <span class="fa fa-comment-alt"  id="contactos" title="Mis Contactos"></span>
+    <span id="separador" title="Herramientas de trabajo">|</span>
+    <span class="fa fa-project-diagram"  id="proyectos" title="Mis Proyectos"></span></span>  
+    <span class="fa fa-user"  id="perfil" title="Mi Perfil"></span></span> 
+
+</div>
+
+<div id="container-pages" >
+<div class="page" >
+<iframe src="materials.html" id="iFrameMaterials"></iframe>
+</div>
+<div class="page" >buscar</div>
+<div class="page" >inicio</div>
+<div class="page" >notificaciones</div>
+<div class="page" >solicitudes</div>
+<div class="page" >contactos</div>
+</div>
+
+</div>
 </body>
 </html>
+
+<style>
+*{padding:0px;margin:0px;outline:0;outline:none;user-select:none;}
+:root{
+    --color-text-1:#000000;
+    --color-text-2:#ffffff;
+    --color-text-3:#999;
+    --color-text-4:#0000ff;
+}
+*::-webkit-scrollbar{
+    display:none;
+}
+body{
+    width:100vw;height:100vh;
+}
+#container{
+    width:100vw;height:100vh;
+    position: relative;background:#dddddd;
+    overflow: hidden;
+}
+@media screen and (min-width:1000px){
+#nav{
+    width:100%;height:50px;
+    box-shadow:rgba(0,0,0,0.2) 3px 3px 5px;
+    display:grid;grid-template-columns:25% 7% 7% 7% 7% 7% 7% 7%; 
+    position:absolute;z-index:2;left:0px;top:0px;
+}   
+#title{
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:1/2;
+}
+#search{
+    color:var(--color-text-3);
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:2/3;font-size:18pt;
+}
+#inicio{
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:3/4;font-size:18pt;
+    color:var(--color-text-3);
+
+}
+#notificaciones{
+    color:var(--color-text-3);
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:4/5;font-size:18pt;
+
+}
+#solisitudes{
+    color:var(--color-text-3);
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:5/6;font-size:18pt;
+
+}
+#contactos{
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:6/7;font-size:18pt;
+    color:var(--color-text-3);overflow:hidden;
+}
+#separador{
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:7/8;font-size:18pt;
+    color:var(--color-text-3);
+}
+#proyectos{
+    color:var(--color-text-3);
+    width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:8/9;font-size:18pt;
+}
+#perfil{
+    color:var(--color-text-2);
+    background:var(--color-text-4);
+    justify-self: center;align-self: center;
+    width:40px;height:40px;display:flex;justify-content:center;align-items:center;align-content:center;
+    grid-column:9/10;font-size:18pt;border-radius:100%;
+}
+
+#container-pages{
+    width:100%;height:calc(100% - 50px);background:none;
+    position:absolute;top:50px;left:0%;z-index:1;
+    display:flex;overflow-y:hidden;overflow-x:scroll;
+    scroll-snap-type:x mandatory;
+    
+}
+#container-pages .page{
+    height:100%;width:100%;
+    min-height:100%;min-width:100%;
+    display:block;scroll-snap-align:start;
+    scroll-snap-stop:always;
+    overflow:hidden;
+   
+}
+
+#iFrameMaterials{
+    border:none;width:100%;height:100%;
+    
+}
+
+}
+
+</style>

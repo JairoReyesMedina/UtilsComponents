@@ -1,0 +1,194 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+       <link rel="stylesheet"  type="text/css" href="public/iconos_fuentes01/style.css" />
+       <link rel="stylesheet" type="text/css"  href="public/fuentes/css/all.css" />
+       <link rel="stylesheet" type="text/css"  href="public/icofont/icofont.css" />
+        <title>Document</title>
+       </head>
+<body>
+   <div id="container">
+
+   <div id="drawer">
+    <div id="container-back-table-drawer"></div>
+    <div id="backbront" ><b>Frontend</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>Backend</b></div>
+    <table id="table-drawer" cellspacing="0" cellpadding="0">
+    <tr id="drawer-items" item-select-drawer="false" ><td>Iconos</td></tr> 
+    <tr id="drawer-items" item-select-drawer="false" ><td>Tipografia</td></tr> 
+    <tr id="drawer-items" item-select-drawer="false" ><td>Palettes</td></tr>
+    <tr id="drawer-items" item-select-drawer="true" ><td>indicadoder de progresso y carga...</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Botones</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>barras de navegacion</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Menus</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Imagenes</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Videos</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Audios</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Textos</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Entradas de Texto</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Tablas</td></tr> 
+    <tr id="drawer-items" item-select-drawer="false" ><td>scrollers</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>barras de rangos</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>formularios</td></tr> 
+    <tr id="drawer-items" item-select-drawer="false" ><td>Cajas de Comentarios</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Chats</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Editores</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Compradores y medios de pago</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Canvas</td></tr>
+    <tr id="drawer-items" item-select-drawer="false" ><td>Svg</td></tr>
+    </table>
+   </div>
+   <!---------------------------------------------------------------->
+   <div id="conponents-view">
+Whats
+   </div>
+ <div id="attributes_and_styles">
+ <div id="Attr_and_Styles"><label>Atriburos</label>&nbsp;&nbsp;&nbsp;<label>Estilos</label></div>
+ </div>
+   </div>
+</body>
+</html>
+
+<style type="text/css">
+    *{padding:0px;margin:0px;outline:0;outline:none;user-select:none;}
+
+@media screen and (min-width:1000px){
+:root{
+    --color-text-1:#000000;
+    --color-text-2:#ffffff;
+    --color-text-3:#999;
+    --color-text-4:#0000ff;
+    --color-text-5:#dddddd;
+    --color-transprent:rgba(0,0,0,0.2);
+
+    --dp-width-drawer:15%;
+    --dp-width-attrs:20%;
+    /*unidades globales*/
+    --dp-margin-01:10%;
+    --dp-fill-parent:100%;
+    --dp-wrap-content:auto;
+    /**/
+    --cursor:pointer;
+}}
+
+#drawer::-webkit-scrollbar{
+   appearance: none; 
+   display: none;
+}
+#drawer::-webkit-scrollbar-thumb{
+   appearance: none;border-radius:100em; 
+}
+
+#drawer {
+    overflow-y:scroll;
+    width:var(--dp-width-drawer);height:100%;position: absolute;
+    
+}
+#table-drawer{
+    z-index:2;position: absolute;
+    width:var(--dp-fill-parent);height:var(--dp-fill-parent);
+    padding-left:15px;right:0px;
+}
+#table-drawer tr{
+    width:var(--dp-fill-parent);height:30px;
+    cursor:var(--cursor);background:none;
+    overflow: hidden; position: relative;
+    
+}
+#table-drawer tr td{
+    position: absolute;padding-left:10px;
+    right:0px;font-weight:100;font-family:arial;
+    width:calc(var(--dp-fill-parent) - 7px);height:var(--dp-fill-parent); color: var(--color-text-2); font-size:9pt;
+    background:var(--color-text-4);display: flex;
+    overflow:hidden;justify-content:start;align-items:center;align-content: center;
+}
+#backbront{
+position:sticky;top:0;left:0;z-index:3;
+color:var(--color-text-2);background:var(--color-text-4);box-shadow:rgba(0,0,0,0.2) 1px 1px 2px 0px;
+padding-top:10px;padding-bottom:10px; width:100%;height:auto;display:flex;justify-content:center;align-items:center;align-content:center;
+}
+#container-back-table-drawer{
+    top:0px;left:0px; width:100px;height:100%;position:fixed;z-index:1;background: var(--color-text-4);
+}
+
+#conponents-view{
+    position:absolute;border-radius:10px;padding:10px;
+    width:calc(var(--dp-fill-parent) - var(--dp-width-drawer) - var(--dp-width-attrs) - 40px);height:calc(var(--dp-fill-parent) - 40px);
+    left:calc(var(--dp-width-drawer) + 10px);top:10px;background:var(--color-text-2);z-index:3;box-shadow:rgba(0,0,0,0.2) 3px 3px 5px,rgba(0,0,0,0.1) -2px -2px 5px;
+}
+
+#attributes_and_styles{
+    height:var(--dp-fill-parent);
+    width:var(--dp-width-attrs);
+    background:var(--color-text-5);
+    box-shadow:rgba(0,0,0,0.1) -3px 3px 5px;
+    position: absolute;right:0;top:0;
+    color: var(--color-text-2);
+    border-radius:10px;
+}
+
+#attr_and_Styles{
+width:100%;height:50px;display:flex;justify-content:center;align-items:center;align-content:center;
+background:var(--color-text-4);box-shadow:rgba(0,0,0,0.2) 3px 3px 5px;border-radius:10px;
+}
+
+</style>
+
+<script type="text/javascript">
+(function(){
+var sel = document.querySelectorAll("#drawer-items")[3];
+sel.querySelector("td").style.color = "var(--color-text-4)";
+sel.querySelector("td").style.background = "var(--color-text-5)";
+sel.style.overflow = "hidden"
+sel.querySelector("td").style.borderRadius =  "100px 0px 0px 100px";
+sel.previousElementSibling.querySelector("td").style.borderRadius = "0px 0px 15px 0px";
+sel.nextElementSibling.querySelector("td").style.borderRadius = "0px 15px 0px 0px";
+})()
+
+document.querySelectorAll("#drawer-items").forEach((e,a,i)=>{
+    e.addEventListener("click",click_item_drawer);
+
+});
+
+function click_item_drawer(){
+try{
+
+var item_select_drawer = document.querySelectorAll("#drawer-items");
+for( var i = 0 ; i < item_select_drawer.length ; i++){
+var td = item_select_drawer[i].querySelector("td");
+td.style.color = "var(--color-text-2)";
+td.style.background = "var(--color-text-4)"; 
+item_select_drawer[i].style.overflow = "hidden"
+td.style.borderRadius =  "0px 0px 0px 0px";
+try {
+       item_select_drawer[i].previousElementSibling.querySelector("td").style.borderRadius = "0px 0px 0px 0px";  
+}catch (error){
+   
+}
+try {
+    item_select_drawer[i].nextElementSibling.querySelector("td").style.borderRadius = "0px 0px 0px 0px";
+}catch(error){}
+
+}
+}catch(e){
+alert(e.stack)
+}
+
+this.setAttribute("item_select_drawer","true")
+this.querySelector("td").style.color = "var(--color-text-4)";
+this.querySelector("td").style.background = "var(--color-text-5)";
+this.style.overflow = "hidden"
+this.querySelector("td").style.borderRadius =  "100px 0px 0px 100px";
+try {
+   this.previousElementSibling.querySelector("td").style.borderRadius = "0px 0px 15px 0px"; 
+} catch (error) { 
+}
+try{
+this.nextElementSibling.querySelector("td").style.borderRadius = "0px 15px 0px 0px";
+}catch (e){}
+
+this.setAttribute("item_select_drawer","false");
+}
+
+
+</script>
